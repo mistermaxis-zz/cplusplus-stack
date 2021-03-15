@@ -1,6 +1,6 @@
-# C++ Visual Studio Console App Template
+# C++ Visual Studio Stack Console App
 
-C++ Visual Studio Console App Template is a template for Visual Studio to create console applications.
+C++ Visual Studio Console App implementing a stack data structure.
 
 ## Installation
 
