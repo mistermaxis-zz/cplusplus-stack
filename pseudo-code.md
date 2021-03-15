@@ -5,6 +5,7 @@
 - count: the amount of items currently stored in the stack.
 - items[]: an array of size *capacity* where the items will be stored.
 - item: a variable or value to be pushed to the stack (in this case the type of value will be int).
+- stack_pointer: a pointer to the top of the stack;
 
 #### Functions
 
