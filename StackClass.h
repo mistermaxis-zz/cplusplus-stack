@@ -6,8 +6,8 @@ private:
 	static const unsigned short capacity = 5;
 	unsigned short count = 0;
 	int items[capacity];
+	const static unsigned short base_pointer = 0;
 	unsigned short stack_pointer = 0;
-	unsigned short base_pointer = 0;
 	bool is_full();
 	bool is_empty();
 public:
@@ -47,5 +47,30 @@ bool Stack::push(int item)
 	else
 	{
 		return false;
+	}
+}
+
+bool Stack::pop()
+{
+	if (is_empty)
+	{
+		return false;
+	}
+	else if (count > 1)
+	{
+		stack_pointer--;
+	}
+	return true;
+}
+
+const int& Stack::peek(const int& index)
+{
+	if (index >= base_pointer && index <= stack_pointer)
+	{
+		return items[index];
+	}
+	else
+	{
+		return 0;
 	}
 }
