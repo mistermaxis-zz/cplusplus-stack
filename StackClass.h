@@ -46,6 +46,7 @@ bool Stack::push(int item)
 	}
 	else
 	{
+		std::cout << "The stack is full; no more items can be pushed.\n";
 		return false;
 	}
 }
@@ -54,6 +55,7 @@ bool Stack::pop()
 {
 	if (is_empty)
 	{
+		std::cout << "The stack is empty; there's nothing to pop.\n";
 		return false;
 	}
 	else if (count > 1)
@@ -71,6 +73,7 @@ const int& Stack::peek(const int& index)
 	}
 	else
 	{
+		std::cout << "The index selected is out of range. Please select an index that is in range (0 - 4).\n";
 		return 0;
 	}
 }
