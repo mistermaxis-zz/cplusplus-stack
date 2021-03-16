@@ -77,3 +77,11 @@ const int& Stack::peek(const int& index)
 		return 0;
 	}
 }
+
+void Stack::log()
+{
+	for (int i = 4; i > 0; i--)
+	{
+		std::cout << "| " << items[i] << " |\n";
+	}
+}
