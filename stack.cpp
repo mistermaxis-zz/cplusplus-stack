@@ -2,7 +2,14 @@
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    Stack myStack;
+    myStack.pop();
+    myStack.push(38491);
+    myStack.push(382);
+    myStack.push(23491);
+    myStack.push(383491);
+    myStack.push(386431);
+    myStack.push(323);
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
